@@ -1,0 +1,26 @@
+@use 'global'
+
+.container
+    width: 100%
+    display: flex
+    flex-direction: row
+    margin-top: 5rem
+    justify-content: center
+    column-gap: 3rem
+
+    button
+        width: 120px
+        height: 50px
+        background: global.$light_blue
+        border: none
+        border-radius: 10px
+        color: global.$gray
+        font-weight: bolder
+        font-size: 1.2rem
+        transition: all 0.2s ease-in-out
+
+        &:hover
+            background: white
+            color: global.$dark_blue
+            box-shadow: 5px 5px 15px 1px #b1dffc32 
+

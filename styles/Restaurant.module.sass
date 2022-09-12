@@ -1,0 +1,73 @@
+@use 'global'
+  
+.container 
+  margin-top: 2rem
+  padding: 0 2rem
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  column-gap: 2%
+
+  @media (min-width:1025px) 
+      flex-direction: row
+
+.name
+  font-size: 1.5rem
+  font-weight: bold
+  margin-bottom: 1.5rem
+  text-align: center
+
+.mapContainer
+  width: 100%
+  height: 100%
+
+  @media (min-width:1025px) 
+      width: 53%
+
+.infoContainer
+  width: 100%
+  color: global.$gray
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  @media (min-width:1025px) 
+      width: 45%
+  
+.grade
+  margin-top: 1rem
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  column-gap: 4%
+  margin-bottom: 1rem
+
+.gradeLess
+  @media (min-width:1025px) 
+    flex-direction: column
+    
+
+.gradeItem
+  margin: 0.5rem 0
+  padding: 1rem 2rem
+  background: global.$light_blue
+  border: 1px solid global.$light_blue
+  border-radius: 45px
+  text-align: center
+  width: 48%
+
+.gradeItemLess
+  @media (min-width:1025px) 
+    width: 100%
+
+.gradeScore
+  display: flex
+  column-gap: 20px
+  margin-bottom: 1rem
+
+
+
+
+

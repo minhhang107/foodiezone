@@ -1,0 +1,38 @@
+@use 'global'
+
+.container
+    border: 0px global.$light_blue
+    border-radius: 15px
+    padding: 1em
+    background: global.$light_blue
+    transition: all 0.2s ease-in-out
+    margin-top: 2rem 
+    width: 100%
+    color: global.$gray
+
+    @media (min-width: 600px) 
+        width: 45%
+
+    @media (min-width:1025px) 
+        width: 30%
+
+    @media (min-width:1281px) 
+        width: 20%
+
+    &:hover
+        transform: translateY(-5px)
+        border: 1px solid global.$light_blue
+        border-radius: 15px
+        box-shadow: 5px 5px 15px 1px #b1dffc32 
+        padding: 1em
+        background: white  
+        pointer: cursor
+        color: global.$light_blue
+        
+.restaurantName
+    font-size: 1.5rem
+    margin-bottom: 1.5rem
+
+
+.link
+    cursor: pointer

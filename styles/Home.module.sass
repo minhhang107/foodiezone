@@ -1,0 +1,42 @@
+@use 'global' 
+
+.container
+  padding: 0 2rem
+  max-width: 100%
+  background: global.$dark_blue
+
+.layout
+  padding: 4rem 2rem
+  max-width: 100%
+  background: global.$dark_blue
+
+.main 
+  padding: 1rem 0
+  flex: 1
+  display: flex
+  flex-direction: column
+  align-items: center
+  @media (min-width: 600px) 
+    margin: 0 5%
+  @media (min-width: 1281px) 
+    margin: 0 10%
+
+.link 
+  text-decoration: none
+  cursor: pointer
+
+.title a
+  &:hover
+  &:focus
+  &:active 
+    text-decoration: underline
+
+
+.title 
+  margin: 0 auto
+  width: fit-content
+  line-height: 1.15
+  font-size: 3rem
+  color: global.$gray
+
+  
